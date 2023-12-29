@@ -12,6 +12,7 @@ use walkdir::WalkDir;
 pub type PxSc = u16;
 
 /// Atlas pixel position 2d vector
+#[derive(Debug)]
 pub struct PxVec {
     /// Horizontal position
     pub x: PxSc,
@@ -20,6 +21,7 @@ pub struct PxVec {
 }
 
 /// Atlas pixel position rectangle
+#[derive(Debug)]
 pub struct PxRect {
     /// Horizontal position
     pub x: PxSc,
