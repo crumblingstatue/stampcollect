@@ -25,9 +25,9 @@ dependencies = [
 
 [[package]]
 name = "etagere"
-version = "0.2.8"
+version = "0.2.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fcf22f748754352918e082e0039335ee92454a5d62bcaf69b5e8daf5907d9644"
+checksum = "306960881d6c46bd0dd6b7f07442a441418c08d0d3e63d8d080b0f64c6343e4e"
 dependencies = [
  "euclid",
  "svg_fmt",
@@ -44,9 +44,9 @@ dependencies = [
 
 [[package]]
 name = "libc"
-version = "0.2.149"
+version = "0.2.151"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a08173bc88b7955d1b3145aa561539096c421ac8debde8cbc3612ec635fee29b"
+checksum = "302d7ab3130588088d277783b1e2d2e10c9e9e4a16dd9050e6ec93fb3e7048f4"
 
 [[package]]
 name = "link-cplusplus"
@@ -68,9 +68,9 @@ dependencies = [
 
 [[package]]
 name = "once_cell"
-version = "1.18.0"
+version = "1.19.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "dd8b5dd2ae5ed71462c540258bedcb51965123ad7e7ccf4b9a8cafaa4a63576d"
+checksum = "3fdb12b2476b595f9358c5161aa467c2438859caa136dec86c26fdd2efe17b92"
 
 [[package]]
 name = "same-file"
@@ -84,7 +84,7 @@ dependencies = [
 [[package]]
 name = "sfml"
 version = "0.21.0"
-source = "git+https://github.com/jeremyletang/rust-sfml.git#b6786402cb831cccf22515d566c94fa925fd32a1"
+source = "git+https://github.com/jeremyletang/rust-sfml.git#22ebe6cdca2135404742369ad1459414994bc05b"
 dependencies = [
  "bitflags",
  "cc",
