@@ -1,6 +1,9 @@
-use sfml::{graphics::Texture, SfBox};
+use sfml::{
+    graphics::{IntRect, Texture},
+    SfBox,
+};
 pub use stampcollect::collect;
-use stampcollect::{AtlasBuilder, PxSc, PxVec};
+use stampcollect::{AtlasBuilder, PxRect, PxSc, PxVec};
 
 pub struct SfmlAtlasBuilder {
     atlas_texture: SfBox<Texture>,
@@ -49,6 +52,21 @@ impl AtlasBuilder for SfmlAtlasBuilder {
         PxVec {
             x: size.x as PxSc,
             y: size.y as PxSc,
+        }
+    }
+}
+
+pub trait PxRectExt {
+    fn to_sf_intrect(&self) -> IntRect;
+}
+
+impl PxRectExt for PxRect {
+    fn to_sf_intrect(&self) -> IntRect {
+        IntRect {
+            left: self.x.into(),
+            top: self.y.into(),
+            width: self.w.into(),
+            height: self.h.into(),
         }
     }
 }
