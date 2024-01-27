@@ -2,7 +2,7 @@ use sfml::{
     graphics::{IntRect, Texture},
     SfBox,
 };
-pub use stampcollect::collect;
+pub use stampcollect::{self, collect};
 use stampcollect::{AtlasBuilder, PxRect, PxSc, PxVec};
 
 pub struct SfmlAtlasBuilder {
