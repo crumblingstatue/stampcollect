@@ -1,6 +1,6 @@
 use sfml::{
     graphics::{IntRect, Texture},
-    SfBox,
+    SfBox, SfResult,
 };
 pub use stampcollect::{self, collect};
 use stampcollect::{AtlasBuilder, PxRect, PxSc, PxVec};
@@ -11,15 +11,13 @@ pub struct SfmlAtlasBuilder {
 }
 
 impl SfmlAtlasBuilder {
-    pub fn with_size(w: u16, h: u16) -> Self {
+    pub fn with_size(w: u16, h: u16) -> SfResult<Self> {
         let mut tex = Texture::new().unwrap();
-        if !tex.create(w.into(), h.into()) {
-            panic!("Couldn't create texture atlas texture");
-        }
-        Self {
+        tex.create(w.into(), h.into())?;
+        Ok(Self {
             atlas_texture: tex,
             current_loaded_texture: None,
-        }
+        })
     }
     pub fn into_texture(self) -> SfBox<Texture> {
         self.atlas_texture
