@@ -1,13 +1,14 @@
 use sfml::{
+    cpp::FBox,
     graphics::{IntRect, Texture},
-    SfBox, SfResult,
+    SfResult,
 };
 pub use stampcollect::{self, collect};
 use stampcollect::{AtlasBuilder, PxRect, PxSc, PxVec};
 
 pub struct SfmlAtlasBuilder {
-    atlas_texture: SfBox<Texture>,
-    current_loaded_texture: Option<SfBox<Texture>>,
+    atlas_texture: FBox<Texture>,
+    current_loaded_texture: Option<FBox<Texture>>,
 }
 
 impl SfmlAtlasBuilder {
@@ -19,7 +20,7 @@ impl SfmlAtlasBuilder {
             current_loaded_texture: None,
         })
     }
-    pub fn into_texture(self) -> SfBox<Texture> {
+    pub fn into_texture(self) -> FBox<Texture> {
         self.atlas_texture
     }
 }
