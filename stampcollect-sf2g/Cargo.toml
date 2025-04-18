@@ -8,7 +8,7 @@ edition = "2021"
 [dependencies.stampcollect]
 path = ".."
 
-[dependencies.sfml]
-version = "0.24.0"
+[dependencies.sf2g]
+git = "https://github.com/crumblingstatue/sf2g.git"
 default-features = false
 features = ["graphics"]

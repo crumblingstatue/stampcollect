@@ -10,4 +10,4 @@ etagere = "0.2.8"
 walkdir = "2.4.0"
 
 [workspace]
-members = ["stampcollect-sfml"]
+members = ["stampcollect-sf2g"]

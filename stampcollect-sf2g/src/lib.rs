@@ -1,4 +1,4 @@
-use sfml::{
+use sf2g::{
     cpp::FBox,
     graphics::{IntRect, Texture},
     SfResult,
