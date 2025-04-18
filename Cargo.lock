@@ -10,15 +10,15 @@ checksum = "ace50bade8e6234aa140d9a2f552bbee1db4d353f69b8217bc503490fc1a9f26"
 
 [[package]]
 name = "bitflags"
-version = "2.6.0"
+version = "2.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b048fb63fd8b5923fc5aa7b340d8e156aec7ec02f0c78fa8a6ddc2613f6f71de"
+checksum = "5c8214115b7bf84099f1309324e63141d4c5d7cc26862f97a0a857dbefe165bd"
 
 [[package]]
 name = "cc"
-version = "1.2.1"
+version = "1.2.19"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fd9de9f2205d5ef3fd67e685b0df337994ddd4495e2a28d185500d0e1edfea47"
+checksum = "8e3a13707ac958681c13b39b458c073d0d9bc8a22cb1b2f4c8e55eb72c13f362"
 dependencies = [
  "shlex",
 ]
@@ -34,9 +34,9 @@ dependencies = [
 
 [[package]]
 name = "etagere"
-version = "0.2.13"
+version = "0.2.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0e2f1e3be19fb10f549be8c1bf013e8675b4066c445e36eb76d2ebb2f54ee495"
+checksum = "fc89bf99e5dc15954a60f707c1e09d7540e5cd9af85fa75caa0b510bc08c5342"
 dependencies = [
  "euclid",
  "svg_fmt",
@@ -53,9 +53,9 @@ dependencies = [
 
 [[package]]
 name = "link-cplusplus"
-version = "1.0.9"
+version = "1.0.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9d240c6f7e1ba3a28b0249f774e6a9dd0175054b52dfbb61b16eb8505c3785c9"
+checksum = "4a6f6da007f968f9def0d65a05b187e2960183de70c160204ecfccf0ee330212"
 dependencies = [
  "cc",
 ]
@@ -71,9 +71,9 @@ dependencies = [
 
 [[package]]
 name = "pkg-config"
-version = "0.3.31"
+version = "0.3.32"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "953ec861398dccce10c670dfeaf3ec4911ca479e9c02154b3a215178c5f566f2"
+checksum = "7edddbd0b52d732b21ad9a5fab5c704c14cd949e5e9a1ec5929a24fded1b904c"
 
 [[package]]
 name = "same-file"
@@ -113,7 +113,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "stampcollect-sfml"
+name = "stampcollect-sf2g"
 version = "0.1.0"
 dependencies = [
  "sf2g",
@@ -122,9 +122,9 @@ dependencies = [
 
 [[package]]
 name = "svg_fmt"
-version = "0.4.4"
+version = "0.4.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ce5d813d71d82c4cbc1742135004e4a79fd870214c155443451c139c9470a0aa"
+checksum = "0193cc4331cfd2f3d2011ef287590868599a2f33c3e69bc22c1a3d3acf9e02fb"
 
 [[package]]
 name = "walkdir"
@@ -138,9 +138,9 @@ dependencies = [
 
 [[package]]
 name = "widestring"
-version = "1.1.0"
+version = "1.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7219d36b6eac893fa81e84ebe06485e7dcbb616177469b142df14f1f4deb1311"
+checksum = "dd7cf3379ca1aac9eea11fba24fd7e315d621f8dfe35c8d7d2be8b793726e07d"
 
 [[package]]
 name = "winapi-util"
