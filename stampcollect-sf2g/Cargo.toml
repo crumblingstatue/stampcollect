@@ -9,6 +9,4 @@ edition = "2024"
 path = ".."
 
 [dependencies.sf2g]
-git = "https://github.com/crumblingstatue/sf2g.git"
-default-features = false
-features = ["graphics"]
+version = "0.2"
