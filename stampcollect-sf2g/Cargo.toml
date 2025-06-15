@@ -9,4 +9,4 @@ edition = "2024"
 path = ".."
 
 [dependencies.sf2g]
-version = "0.2"
+version = "0.4"
